@@ -172,6 +172,9 @@ nav .button:hover {
 	font-weight: normal;
 }
 
+#intro p span {
+	color: var(--magenta);
+}
 /* project styles */
 
 #projects {
