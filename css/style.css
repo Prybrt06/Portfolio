@@ -317,3 +317,73 @@ nav .button:hover {
 #footer p {
 	font-size: 0.7rem;
 }
+
+/* About page style */
+
+.about {
+	background-color: var(--dkblue);
+	padding: 4rem 0;
+}
+
+#about-me {
+	max-width: 1200px;
+	padding: 2rem;
+}
+
+#about-me img{
+	padding: 1rem;
+	border-left: 1px solid var(--aqua);
+	border-top: 1px solid var(--aqua);
+	border-radius: 35px;
+}
+
+#about-me p {
+	background-color: var(--black);
+	padding: 1rem;
+	border-radius: 10px;
+	font-size: 1rem;
+	line-height: 1.5rem;
+}
+
+#about-me h4 {
+	font-size: 1rem;
+	color: var(--aqua);
+	font-family: var(--mono);
+}
+
+#about-me h4:last-child {
+	color: var(--white);
+}
+
+#about-me ul {
+	list-style-type: none;
+	font-size: 1.2rem;
+	display: flex;
+	justify-content: flex-start;
+	gap: 1rem;
+	margin: 0;
+	padding: 0;
+}
+
+@media (min-width: 550px) {
+	#about-me {
+		margin: 0 auto;
+		display: grid;
+		grid-template-columns: repeat(9,1fr);
+	}	
+
+	#about-me img {
+		grid-column: 1/5;
+		grid-row: 1/2;
+	}
+
+	#about-me .about-text{
+		grid-column: 4/10;
+		grid-row: 1/2;
+		text-align: right;
+	}
+
+	#about-me ul {
+		justify-content: flex-end;
+	}
+}
